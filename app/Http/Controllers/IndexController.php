@@ -15,7 +15,6 @@ class IndexController extends Controller
      */
     public function index()
     {
-
         $variables = [
             'nome' => 'Jairo Couto',
             'email' => 'fake@teste.com.br',
@@ -168,7 +167,6 @@ class IndexController extends Controller
     {
 
         try {
-            //$sql = str_replace('?', $parameter, [$parameter]);
 
             $sql = 'select nome from usuarios where id_usuario = ?';
             $parameter = 3;
@@ -199,7 +197,7 @@ class IndexController extends Controller
 
 
     /**
-     * Download PDF
+     * Rotina Responsável pela geração do PDF
      */
     public function downloadPdf()
     {
