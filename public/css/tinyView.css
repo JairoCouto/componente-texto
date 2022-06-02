@@ -1,0 +1,79 @@
+
+.background-margin-a4 {
+    background: #b5b5b5;
+    padding: 0;
+    background-image: url(data:image/svg+xml;utf8,%3Csvg%20width%3D%22100%25%22%20height%3D%22297mm%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cline%20x1%3D%220%22%20y1%3D%22297mm%22%20x2%3D%22100%25%22%20y2%3D%22297mm%22%20stroke%3D%22%23737373%22%20height%3D%221px%22%2F%3E%3C%2Fsvg%3E);
+    background-repeat: repeat-y;
+    background-position: 0 0;
+  }
+  
+  .margin-a4 {
+    padding: 0 13mm !important;
+    padding-top: 13mm !important;
+    margin: 0 auto !important;
+    background-image: url(data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22210mm%22%20height%3D%22297mm%22%3E%3Crect%20width%3D%22210mm%22%20height%3D%22297mm%22%20style%3D%22fill%3A%23fff%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22100%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%20stroke%3D%22%23737373%22%20height%3D%221px%22%2F%3E%3Cline%20x1%3D%2213mm%22%20y1%3D%220%22%20x2%3D%2213mm%22%20y2%3D%22100%25%22%20stroke%3D%22%230168e1%22%20height%3D%221px%22%20stroke-dasharray%3D%225%2C5%22%2F%3E%3Cline%20x1%3D%22197mm%22%20y1%3D%220%22%20x2%3D%22197mm%22%20y2%3D%22100%25%22%20stroke%3D%22%230168e1%22%20height%3D%221px%22%20stroke-dasharray%3D%225%2C5%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%2213mm%22%20x2%3D%22100%25%22%20y2%3D%2213mm%22%20stroke%3D%22%230168e1%22%20height%3D%221px%22%20stroke-dasharray%3D%225%2C5%22%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22284mm%22%20x2%3D%22100%25%22%20y2%3D%22284mm%22%20stroke%3D%22%230168e1%22%20height%3D%221px%22%20stroke-dasharray%3D%225%2C5%22%2F%3E%3C%2Fsvg%3E);
+    background-repeat: repeat-y;
+    background-position: 0 0;
+    width: 210mm;
+    min-height: 297mm !important;
+    box-sizing: border-box;
+  
+  }
+  
+  .mce-content-body {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-style: normal;
+    letter-spacing: 0;
+    color: #262626;
+    line-height: 1.25rem;
+  }
+  
+  .document-ruler-a4 {
+    padding: 0 !important;
+    width: 100%;
+    font-size: 13px;
+    font-family: Helvetica,Arial,sans-serif !important;
+    font-style: normal;
+    letter-spacing: 0
+  }
+  
+  .mce-content-body p {
+    margin: 0 !important;
+  }
+  
+  
+  html.document-ruler-a4 .mce-ruler-pagebreak{
+    margin-top: 13mm;
+    margin-bottom: 13mm;
+    margin-left: -13mm;
+    width: calc(100% + 26mm);
+    border: 0;
+    height: 1px;
+    background: #5a8ecb;
+  }
+  
+  @media print {
+    @page {
+      size: 210mm 297mm;
+      margin: 13mm !important;
+      counter-increment: page
+    }
+    html.document-ruler-a4, html.document-ruler-a4 body {
+      background: transparent;
+      box-shadow: none
+    }
+    html.document-ruler-a4 body {
+      padding: 0 !important;
+      width: 100%;
+      font-size: 13px;
+      font-family: Helvetica,Arial,sans-serif !important;
+      font-style: normal;
+      letter-spacing: 0;
+      line-height: 1.25rem;
+    }
+    html.document-ruler-a4 .mce-ruler-pagebreak{
+      margin: 0 !important;
+      height: 0 !important
+    }
+  }
