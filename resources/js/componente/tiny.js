@@ -251,22 +251,25 @@ function pluginRuler(editor) {
 
 tinymce.PluginManager.add("ruler", pluginRuler);
 
-function pluginMath(editor) {
+//function pluginMath(editor) {
   // Create API
   // https://github.com/mathjax/MathJax-src#using-mathjax-components-in-node-applications
   // https://github.com/uetchy/math-api/blob/master/index.ts
 
   // https://github.com/mathjax/MathJax-demos-node/blob/master/direct/tex2svg
-  const apiMath = "https://math.now.sh/?from="; // 'https://chart.googleapis.com/chart?cht=tx&chf=a,s,000000|bg,s,FFFFFF00&chl='
 
-  const getSrc = function(text) {
-    const textURI = window
-      .encodeURIComponent(text)
-      .replace(/[!'()]/g, escape)
-      .replace(/\*/g, "%2A");
-    return apiMath + textURI;
-  };
+  
+  //const apiMath = "https://math.now.sh/?from="; // 'https://chart.googleapis.com/chart?cht=tx&chf=a,s,000000|bg,s,FFFFFF00&chl='
 
+  //const getSrc = function(text) {
+  //  const textURI = window
+  //    .encodeURIComponent(text)
+  //    .replace(/[!'()]/g, escape)
+  //    .replace(/\*/g, "%2A");
+  //  return apiMath + textURI;
+  //};
+
+  /*
   const createSrc = function(text, width = 0, height = 0) {
     const widthAttr = width > 0 ? `width="${width}" ` : "";
     const heightAttr = height > 0 ? `height="${height}" ` : "";
@@ -274,7 +277,9 @@ function pluginMath(editor) {
       text
     )}" data-mce-math="true" ${widthAttr}${heightAttr}/>`;
   };
+  */
 
+  /*
   const isMath = function(node) {
     return (
       node !== void 0 &&
@@ -283,7 +288,9 @@ function pluginMath(editor) {
       node.dataset.mceMath === "true"
     );
   };
+  */
 
+  /*
   const getMath = function(node) {
     if (isMath(node) === true) {
       const textMath = node.dataset.mceSrc;
@@ -299,7 +306,9 @@ function pluginMath(editor) {
       height: 0
     };
   };
+  */
   
+  /*
   const generateMatrix = function generateMatrix (type, rows, columns) {
     let res = '\\begin{' + type + '}\n'
     for (let i = 1; i <= rows; i++) {
@@ -316,6 +325,7 @@ function pluginMath(editor) {
     }
     return res + '\\end{' + type + '}'
   }
+  */
 
   /*
   const Dialog = editor => {
@@ -641,7 +651,7 @@ function pluginMath(editor) {
   });
   */
 
-}
+//}
 
 /*tinymce.PluginManager.add("math", pluginMath);*/ //REMOVER 
 
